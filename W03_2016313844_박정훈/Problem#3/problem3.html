@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Transfer Form</title>
+</head>
+<body>
+    <h1>Immediate Transfer/Scheduled Transfer</h1>
+    <h2 style="color:blue;">Withdrawl account information</h2>
+    <table border="1" style="width:100%;">
+        <tr>
+            <td>Withdrawl account no.</td>
+            <td><form>
+                <select name="account">
+                    <option value="friend">My friend's savings</option>
+                    <option value="own">My own savings</option>
+                </select><br>
+                <input type="submit" value="submit">
+            </form></td>
+        </tr>
+        <tr>
+            <td>Account password</td>
+            <td><form>
+                <input type="password" name="psw" maxlength="10" size="10">
+                <button>Enter with mouse</button>
+                <input type="submit" value="Inquire password error count">
+                <input type="submit" value="Withdrawl account management">
+            </form></td>
+        </tr>
+        <tr>
+            <td>Transfer amount</td>
+            <td><form>
+                <input type="text" name="amount">
+                <button>KRW</button>
+                <input type="submit" value="Transfer limit inquiry"><br>
+                <input type="submit" value="KRW 1,000,000">
+                <input type="submit" value="KRW 500,000">
+                <input type="submit" value="KRW 100,000">
+                <input type="submit" value="KRW 50,000">
+                <input type="submit" value="KRW 30,000">
+                <input type="submit" value="KRW 10,000">
+                <input type="submit" value="Total amount">
+                <input type="submit" value="Correct">
+            </form></td>
+        </tr>
+        <tr>
+            <td>My passbook indication details</td>
+            <td><form>
+                <input type="text" name="details">
+                <button>Up to 8 digits (If omitted, the account holder name of the deposit passbook will be displayed.)</button>
+            </form></td>
+        </tr>
+    </table>
+    <h2 style="color:blue;">Deposit account information</h2>
+    <table border="1" style="width:100%;">
+        <tr>
+            <td>Deposit bank<br>
+                Deposit account no.
+            </td>
+            <td><form>
+                <input type="submit" value="Frequently used deposit account">
+                <input type="submit" value="Last deposit account">
+                <input type="submit" value="My account" style="margin-right:10px;">
+                <input type="submit" value="Inquire troubled bank"><br>
+                <select name="Deposit bank">
+                    <option value="woori">020-Woori</option>
+                    <option value="seoul">Seoul</option>
+                    <option value="shinhan">Shinhan</option>
+                    <option value="nonghyup">Nonghyup</option>
+                </select><br>
+                <input type="text" name="amount">
+            </form></td>
+        </tr>
+        <tr>
+            <td>Recipient's passbook indication details</td>
+            <td><form>
+                <input type="text" name="details" placeholder="JEONG HOON">
+                <button>Up to 8 digits (If omitted, the account holder name of the deposit passbook will be displayed.)</button>
+            </form></td>
+        </tr>
+        <tr>
+            <td>Transfer action date</td>
+            <td><form>
+                <input type="text" name="details">
+                <button>Designate transfer date</button>
+            </form></td>
+        </tr>
+    </table>
+    <br>
+    <h2 style="color:blue;" style="margin:0 auto;">Optional input information <button>Open CMS number, etc</button></h2>
+    
+    <hr>
+    <p style="color:orange;" style="margin:0 auto;">person impersonating for as employee of the public agency such as the National Tax Service and public prosecutors office,
+        be sure to confirm the fact to make a loss.</p>
+    </table>
+    <div style="text-align:center; margin:0 auto;">
+        <button style="text-align:center;">Confirm</button>
+    </div>
+    
+</body>
+</html>
