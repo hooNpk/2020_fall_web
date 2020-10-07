@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .layout{display:inline-block}
+            .size{width: 300px; height:300px;}
+            .menu-word{font-size : 1.25rem; 
+                color:red; font-weight:2000; 
+                text-align:center;
+                font-style:italic;
+                font-weight:bolder;}
+            #header{font-size:3rem; font-weight: 4000; color:#3445dc}
+            .space{margin:20px;}
+            a {font-size:2rem; font-weight:bolder;}
+            .catchprize{ font : normal bold 3rem/1.6 sans-serif;}
+            .hr-sect {
+                display: flex;
+                flex-basis: 100%;
+                align-items: center;
+                color: rgba(0, 0, 0);
+                font-size: 2rem;
+                margin: 8px 0px;
+            }
+            .hr-sect::before,.hr-sect::after {
+                content: "";
+                flex-grow: 1;
+                background: rgba(0, 0, 0, 0.35);
+                height: 1px;
+                font-size: 0px;
+                line-height: 0px;
+                margin: 0px 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="header" class="space">EDIYA COFFEE</h1>
+        <hr>
+        <img src="ediya.jpg" style="width:100%; height:500px; margin:20px">
+        <h2 class="space catchprize" style="text-align:center">엄선한 원두에서 추출한 최상의 맛과 향을 즐기다!</h2>
+        
+        <div class="space">
+            <h3 style="margin:0px;" class="catchprize">메뉴</h3>
+            <div class="hr-sect">추천상품</div>
+            <ul >
+                <li class="layout">
+                    <figure><img src="AA.jpg" class="size"><figcaption class="menu-word">Ice Americano</figcaption></figure>
+                </li>
+                <li class="layout">
+                    <figure><img src="DDA.jpg" class="size"><figcaption class="menu-word">Americano</figcaption></figure>
+                </li>
+                <li class="layout">
+                    <figure><img src="CL.jpg" class="size"><figcaption class="menu-word">Cafe Latte</figcaption></figure>
+                </li>
+            </ul>
+        </div>
+        <a href="http://www.ediya.com" class="space" target=_blank>Go to EDIYA</a>
+    </body>
+</html>

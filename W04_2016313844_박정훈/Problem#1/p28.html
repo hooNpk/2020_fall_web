@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+            span[lang] {font-weight:bold;}
+            span[lang="pt"] {color:green;}
+            span[lang~="en-us"] {color: blue;}
+            span[lang|="zh"] {color: red;}
+            a[href^="#"] {background-color: gold;}
+            span[class^="main"] {background-color: yellow;}
+            a[href$=".cn"] {color: red;}
+            a[href$=".jp"] {color: blue;}
+            a[href*="example"] {background-color: #CCCCCC;}
+        </style>
+    </head>
+
+    <body>
+        <div class="hello-example">
+            <a href="http://example.com">English:</a>
+            <span lang="en-us en-gb en-au en-nz">Hello World!</span>
+        </div>
+        <div class="hello-example">
+            <a href="#portuguese">Portuguese:</a>
+            <span lang="pt">Olá Mundo!</span>
+        </div>
+        <div class="hello-example">
+            <a href="http://example.cn">Chinese:</a>
+            <span lang="zh-CN">世界您好！</span>
+        </div>
+        <div class="hello-example">
+            <a href="http://www.naver.jp">Japanese:</a>
+            <span lang="jp">こんにちは世界！</span>
+        </div>
+    </body>
+</html>
