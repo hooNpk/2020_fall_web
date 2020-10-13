@@ -1,0 +1,29 @@
+.layout{display:inline-block}
+.size{width: 300px; height:300px;}
+.menu-word{font-size : 1.25rem; 
+    color:red; font-weight:2000; 
+    text-align:center;
+    font-style:italic;
+    font-weight:bolder;}
+#header{font-size:3rem; font-weight: 4000; color:#3445dc}
+.space{margin:20px;}
+a {font-size:2rem; font-weight:bolder; }
+a:hover { color : green;}
+.catchprize{ font : normal bold 3rem/1.6 sans-serif;}
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0);
+    font-size: 2rem;
+    margin: 8px 0px;
+}
+.hr-sect::before,.hr-sect::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+}
