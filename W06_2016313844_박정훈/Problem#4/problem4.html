@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <style>
+      .square {
+        background: lightblue;
+        border: 1px solid blue;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        text-align: center;
+        display: inline-block;
+      }
+      .square.fade-in {
+          animation-name: fade;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+          animation-fill-mode: none;
+      }
+      .square.fade-out {
+          animation-name: fade;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: reverse;
+          animation-fill-mode: none;
+      }
+
+      .square.blink {
+          animation-name: blinky;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+          animation-fill-mode: none;      
+      }
+
+      .square.bounce {
+          position : relative;
+          animation-name: bounce;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+          animation-fill-mode: none; 
+      }
+
+      .square.shake {
+          animation-name: shake;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+          animation-fill-mode: none; 
+      }
+
+      .square.zoom {
+          animation-name: zoom;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+          animation-fill-mode: none; 
+      }
+
+      .square.dizzy {
+          animation-name: dizzy;
+          animation-duration: 3s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+          animation-fill-mode: none;
+      }
+
+      @keyframes fade {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      @keyframes blinky {
+        0% { opacity : 1;}
+        30%{ opacity : 1;}
+        50% {opacity : 0;}
+        70% { opacity: 1;}
+        100% { opacity: 1;}
+      }
+
+      @keyframes bounce {
+          0%, 100% {  top : 0px;}
+          50% { top : -20px; }
+          80% { top : -50px; }
+      }
+
+      @keyframes shake {
+          0%, 100% { transform: translateX(0);}
+          10%, 30%, 50%, 70%, 90% { transform: rotate(45deg);}
+          20%, 40%, 60%, 80% {transform: rotate(-45deg); }
+      }
+
+      @keyframes zoom {
+          0% { transform: scale(1, 1);}
+          30%{ transform: scale(1.2, 1.2);}
+          50%{ transform : scale(1, 1);}
+          70% {transform: scale(0.8, 0.8); }
+      }
+
+      @keyframes dizzy {
+          0% { transform: scale(1, 1);}
+          100% {transform : skewX(-60deg) rotate(60deg) scaleX(1.2); background-color : green;}
+      }
+
+    </style>
+</head>
+  <body>
+    <div class="square fade-in"><h3>Fade-in</h3></div>
+    <div class="square fade-out"><h3>Fade-out</h3></div>
+    <div class="square blink"><h3>Blink</h3></div>
+    <div class="square shake"><h3>Shake</h3></div>
+    <div class="square bounce"><h3>Bounce</h3></div>
+    <div class="square zoom"><h3>Zoom</h3></div>
+    <div class="square dizzy"><h3>Dizzy</h3></div>
+  </body>
+</html>

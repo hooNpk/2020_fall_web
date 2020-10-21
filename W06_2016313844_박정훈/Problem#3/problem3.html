@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <style>
+
+      html {
+        overflow-y : scroll;
+      }
+
+      .info {
+        width:200px;  height:50px;  background-color: blue; border:1px solid black;
+        padding:10px;
+        position : fixed; left : 10px;  top : 150px;  color : white;
+        z-index : 0;
+      }
+
+      body {
+        background-color : lightgrey;
+      }
+
+      .wrapper {
+        width : 880px;  height : 1180px; padding : 20px; margin:auto;
+        border:2px solid grey;
+        background-color:white;
+      }
+      
+      .animal_base {
+        width : 800px; height:300px; margin:20px auto;
+        z-index : 0;
+        position : relative;
+        background-color : white
+      }
+
+      .shoebill {
+        padding: 20px;
+        z-index : 1;
+      }
+
+      .image_size {
+        width : 300px; height:200px; display:inline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" >
+      <div class="animal_base" style="border:2px solid green">
+        <h1 style="margin-left:0px">Platypus</h1>
+        <img src="platypus.jpg" class="image_size" align="left" style="padding-right: 20px">
+        <p style="display:inline;">The platypus (Ornithorhynchus anatinus), sometimes referred to as the duck-billed platypus, is a semiaquatic egg-laying mammal endemic to eastern Australia, including Tasmania. The platypus is the sole living representative of its family (Ornithorhynchidae) and genus (Ornithorhynchus), though a number of related species appear in the fossil record.</p>
+      </div>
+
+      <div class="animal_base shoebill" style="border:2px solid grey">
+        <h1 style="text-align:right">Shoebill</h1>
+        <img src="shoebill.jpg" class="image_size" align="right" style="padding-left: 20px">
+        <p>The shoebill (Balaeniceps rex) also known as whalehead, whale-headed stork, or shoe-billed stork, is a very large stork-like bird. It derives its name from its enormous shoe-shaped bill. It has a somewhat stork-like overall form and has previously been classified with the storks in the order Ciconiiformes based on this morphology. However, genetic evidence places it with the Pelecaniformes. The adult is mainly grey while the juveniles are browner. It lives in tropical east Africa in large swamps from Sudan to Zambia.</p>
+      </div>
+
+      <div class="animal_base" style="border:2px dotted pink">
+        <h1 style="text-align:center">Beluga</h1>
+        <img src="beluga.png" class="image_size" align="left" style="padding-right: 20px">
+        <p>The beluga whale (/bɪˈluːɡə/) (Delphinapterus leucas) is an Arctic and sub-Arctic cetacean. It is one of two members of the family Monodontidae, along with the narwhal, and the only member of the genus Delphinapterus. It is also known as the white whale, as it is the only marine mammal of this colour; the sea canary, due to its high-pitched calls; and the melonhead, though that more commonly refers to the melon-headed whale, which is an oceanic dolphin.</p>
+      </div>
+    </div>
+    <div class="info">For more information <br> click here.<div>
+  </body>
+</html>
