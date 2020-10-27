@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="styles/styles.css" /> -->
+    <title>Title</title>
+    <style>
+        html, body{
+    margin: 0;
+    background: url("../images/bg.jpg") repeat 0 0 #f8f8f8;
+    color: #111820;
+    font-family: "helvetica Neue";
+    min-width: 600px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+
+/*Beginning of styles for the top secondary menu (located on the top most part of the page)*/
+.sec-menu-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 0 4px 2px -2px gray;
+    height: 40px;
+}
+
+.sec-menu {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.sec-menu-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sec-menu-left ul{
+   padding-left: 0;
+}
+
+
+.sec-menu-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec-menu ul{
+    list-style-type: none;
+}
+
+.sec-menu ul li{
+    display: inline;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.sec-menu ul li:hover{
+    text-decoration: underline;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.filter-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.brand-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+/*    border: solid 1px deepskyblue;*/
+}
+
+.brand-logo img{
+    height: 50%;
+    width: 50%;
+    object-fit: contain
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-basis: 80%;
+}
+
+.search-container form{
+    width: 100%;
+}
+
+.select-box, .search-box, .search-button{
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+    outline: none !important;
+}
+
+.search-box{
+    width: 65%;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+}
+
+
+.select-box{
+    width: 20%;
+    margin-left: -5px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    height: 38px;
+}
+
+.search-button{
+    flex: 1;
+    width: 100px;
+    color: #fff;
+    font-size: 16px;
+    border-collapse: collapse;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    vertical-align: baseline;
+    background: #00509d;
+    background: -webkit-gradient(linear,left top,left bottom,from(#0079bc),to(#00509d));
+    background: -moz-linear-gradient(top,#0079bc,#00509d);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.fltr-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content : space-between;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: -5px;
+}
+
+.fltr-menu > div{
+}
+
+.fltr-menu-right{
+    margin : auto;
+}
+
+.fltr-menu .deals-text{
+    color: #333;
+    font-family: "HelveticaNeueBold","HelveticaNeue-Bold","Helvetica Neue Bold","HelveticaNeue","Helvetica Neue",'TeXGyreHerosBold',"Helvetica","Tahoma","Geneva","Arial",sans-serif;
+    font-weight: 700;
+    font-stretch: normal;
+}
+
+.fltr-menu .deals-text{
+    color: #000;
+    font-size: larger;
+}
+
+
+.fltr-menu div ul{
+    list-style-type: none;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.fltr-menu div ul li{
+    display: inline;
+    padding: 0 10px;
+}
+
+
+.slider-container{
+    height: 450px;
+    border: solid 1px #ccc;
+    padding: 5px 15px 10px 15px;
+    background-color: #fff;
+    
+}
+
+.slider-container p{
+    text-align : center;
+    border-bottom: solid 1px #ccc;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight : bold;
+}
+
+.wrapper .featured-deal-label{
+    text-align: center;
+    border: solid 1px #ccc;
+    margin: 10px 0 10px 0;
+    background-color: #fff;
+}
+
+.wrapper .featured-deal-label p{
+    text-transform: uppercase;
+    font-size: larger;
+    line-height: 1;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.wrapper .products-display{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    height: auto;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 180px;
+    flex-basis: 32.5%;
+    margin-bottom: 14px;
+    background-color: #fff;
+}
+
+.product .product-image{
+    border: solid 1px #ccc;
+    padding: 7px;
+    flex: 2;
+}
+
+.product .product-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain
+}
+
+.product .product-description{
+    flex: 3;
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+.more-info-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    padding: 10px 15px 10px 15px;
+}
+
+.more-info-section .left-section, .more-info-section .right-section{
+    border: solid 0.5px #ccc;
+    height: 150px;
+    flex-basis: 50%;
+    padding: 10px;
+    flex-grow: 0;
+}
+
+.more-info-section .left-section{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.more-info-section .right-section{
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+.fashions-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.fashions-section > div{
+    flex: 1;
+}
+
+.fshn-left{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fshn-left div{
+    border: solid 1px #ccc;
+    flex: 1;
+}
+
+.fshn-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.fshn-right div{
+    border: solid 1px #ccc;
+    flex: 1;
+}
+
+.fshn-central{
+    display: flex;
+
+}
+
+.fshn-central div{
+    border: solid 1px #ccc;
+    flex: 1;
+}
+
+
+footer{
+    padding: 20px;
+    border-top: solid 2px #ccc;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="sec-menu-container">
+    <div class="sec-menu">
+        <div class="sec-menu-left">
+            <ul>
+                <li>Hi! <a href="">Sign</a> or <a href="">register</a> </li>
+                <li><a href="">Daily Deals</a></li>
+                <li><a href="">Sell</a></li>
+                <li><a href="">Help &amp; Contact</a></li>
+            </ul>
+        </div>
+        <div class="sec-menu-right">
+            <ul>
+                <li>Ship to</li>
+                <li>My eBay</li>
+                <li><i class="fa fa-bell"></i></li>
+                <li><i class="fa fa-shopping-cart"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="filter-menu">
+        <div class="brand-logo">
+            <img src="images/logo.png" />
+        </div>
+        <div class="search-container">
+            <form>
+                <input class="search-box" type="text" placeholder="Search for anything"/>
+
+                <select class="select-box">
+                    <option value="">All Categories</option>
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                </select>
+                <input class="search-button" type="submit" value="Find" />
+            </form>
+            <a href="#!">Advanced</a>
+        </div>
+    </div>
+    <div class="fltr-menu">
+        <div>
+            <p class="deals-text">Deals</p>
+        </div>
+        <div class="fltr-menu-right">
+            <ul>
+                <li><a href="#!">Featured</a> </li>
+                <li><a href="#!">Tech</a> </li>
+                <li><a href="#!">Fashion</a> </li>
+                <li><a href="#!">Home</a> </li>
+                <li><a href="#!">More</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <p>spotlight deal</p>
+        <div style="display:flex; justify-content:center;">
+            <img src="images/nitendo.jpg" style="height:340px; width:340px; margin-right:40px">
+            <div>
+                <p style="font-size: larger !important; font-weight : bolder; text-align : left; padding-bottom:30px">Nintendo Switch 32GB Console + Minecraft Dungeons<br>
+                    + Super Mario 3D All-Starts</p>    
+                <p style="text-align : left; border-bottom : none; font-size : medium; padding:0px; margin-bottom:0px;"> US $389.99</p>
+                <p style="text-align : left; border-bottom : none; font-size : medium; padding:0px; margin-bottom:0px; margin-top:5px"><strike style="font-weight : lighter !important;">US $549.99 </strike>| 29% OFF</p>
+            </div>
+        </div>
+        </div>
+    <div class="featured-deal-label">
+    </div>
+</div>
+<br />
+<footer>
+    This is the footer section
+</footer>
+</body>
+</html>

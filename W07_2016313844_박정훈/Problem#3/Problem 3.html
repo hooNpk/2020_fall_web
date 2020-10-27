@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<head>
+    <style>
+
+        #wrap {
+            margin: 0 auto;
+            width: 80%;
+            border: 1px solid #cccccc;
+        }
+
+        /*beginning of CSS code for Header text Networking Lab*/
+        #header {
+            border: 1px solid #cccccc;
+            height: 100px;
+        }
+
+        /*End of Code for header text*/
+
+        /*Beginning of CSS code for navigation menu section*/
+        #nav {
+            border: 1px solid #cccccc;
+        }
+
+        #nav ul {
+            list-style : none;
+            display: flex;
+            justify-content : space-between;
+            flex-direction: row;
+            overflow: hidden;
+            padding : 0px;
+            margin : 0px;
+        }
+
+        #nav ul li {
+            width : 100%;
+            text-align : center;
+            padding-top : 16px;
+            padding-bottom : 16px;
+            border : 1px solid #cccccc;
+        }
+       
+        /*End of CSS code for navigation menu section*/
+
+        /*Beginning of CSS code for main content section*/
+        #content_wrap {
+            padding: 10px;
+            border: 1px solid #cccccc;
+        }
+
+        #content_wrap > h2 {
+            border-bottom: 1px solid #cccccc;
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        #content_inner{
+            display: flex;
+            flex-direction: row;
+            flex-wrap : wrap;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        #content_image{
+            flex: 1;
+            padding : 10px;
+            width : 50%;
+        }
+
+        #content_image img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        #content_text{
+            flex: 1;
+            padding: 0 10px 0 10px;
+        }
+
+        #content_text p{
+            font-size: larger;
+            font-weight : 650;
+        }
+
+        #title {
+            text-align : center;
+            width : 100%;
+            border-bottom : 1px solid #cccccc;
+        }
+        /*End of CSS code for main content section*/
+
+        /*Beginning of code for page footer section*/
+        #footer {
+            height: 100px;
+            line-height: 100px;
+            font-size: 1.0em;
+            font-weight: 550;
+            font-style : italic;
+            margin: 0 auto;
+            border: 1px solid #cccccc;
+            text-align : center;
+        }
+        /*End of CSS code for page footer section*/
+
+    </style>
+    <title>Networking Laboratory</title>
+</head>
+
+<body>
+<div id="wrap">
+    <div id="header">
+        <h1 style="text-align : center;">Intelligent Network Laboratory</h1>
+    </div>
+    <div id="nav">
+        <ul>
+            <li>Professors</li>
+            <li>Students</li>
+            <li>Research</li>
+            <li>Courses</li>
+            <li>Publications</li>
+        </ul>
+    </div>
+
+    <div id="content_inner">
+        <div id="title">
+            <p style="font-weight : 750; font-size :larger">General Information</p>
+        </div>
+        <div id="content_image">
+            <img src="Telecommunications1.jpg">
+        </div>
+        <div id="content_text">
+            <p>
+                The Networking Laboratory is an academic unit within the Sungkyunkwan University (SKKU). Our mission is
+                to conduct fundamental research and solid experimental to achieve high capacity, highly reliable, secure
+                network softwarization. The current and past sponsors include government agencies (e.g., NRF, IITP, and
+                ETRI), renowned global companies (e.g., SAMSUNG, LG), and SMEs (e.g., NEXDIGM, CHAHOO).
+                The Networking Laboratory’s designations range from undergraduate honor’s students to postdoctoral
+                research associates and visiting scholars. Our state-of-art researches are actively conducted based on
+                collaborations with researchers not only in Korea but also abroad. Current research areas include mobile
+                network softwarization on embedded systems, soft-switch/router architecture and networking, system
+                modeling and simulations, optical networking, clustering, grid computing, wireless ad-hoc and sensor
+                networks, proxy mobile IPv6, machine-to-machine and software-defined networking.
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        © Copyright 2020 Networking Laboratory, SKKU, Korea. All rights reserved
+    </div>
+</div>
+</body>
+</html>
