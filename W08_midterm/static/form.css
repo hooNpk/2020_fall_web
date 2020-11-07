@@ -1,0 +1,25 @@
+table {
+    margin : 3rem;
+    padding : 1rem;
+    border : 3px solid transparent;
+}
+
+td, th {
+    padding : 1rem;
+    font-size : 1rem;
+    font-family : "News Cycle", "Arial Narrow Bold";
+    font-weight : 600;
+    border : 1px solid transparent;
+}
+
+input {
+    background-color : #eeeeee;
+    display : inline-block;
+    text-align : start;
+    border-width : 2px;
+    border-style : inset;
+    border-color : rgb(118, 118, 118);
+    text-rendering : auto;
+    overflow : visible;
+    margin : 0;
+}

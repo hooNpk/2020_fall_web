@@ -6,8 +6,9 @@
     <title>VEGE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="../static/base.css" media="screen">
-    <link rel="stylesheet" href="../static/blog-home.css" media="screen">
+    <link rel="stylesheet" href="../static/fit.css" media="screen">
+    <link rel="stylesheet" href="../static/fit_detail.css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,25 +17,7 @@
             <div class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
                 <div class="container">
                     <a href="../" class="navbar-brand">Vege-Search</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes"> 식당 <span
-                                        class="caret"></span></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" > 도서관 <span
-                                        class="caret"></span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../help/">더 알아보기</a>
-                            </li>
-                        </ul>
-        
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
                                 <button type="button" class="btn btn-primary" onclick="location.href='post_form.html'">
@@ -50,20 +33,19 @@
     
     <!-- Page Content -->
     <content>
-        <div class="container">
+        <div class="container container-flex">
             <div class="row">
                 <!-- Blog Entries Column -->
                 <div class="col-md-8">
-                    
-                    <button class="btn btn-primary btn-sm float-right"  onclick="location.href='/blog/create'">새 게시물</button>
-                    <h1 class="my-4">
+                    <button class="btn btn-primary btn-sm float-right shake"  onclick="location.href='/blog/create'">새 게시물</button>
+                    <h1 class="my-4 recent">
                         최근 게시물
                     </h1>
                     <!-- Blog Post -->
                     <div class="card mb-4">
                         <img class="card-img-top" src='../_media/마라탕.jpg' alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">{{p.content | truncatewords:50}}</p>
+                            <p class="card-text">수해복 :: 마라탕</p>
                             <a href="post_detail.html" class="btn btn-primary">더 보기 &rarr;</a>
                         </div>
                         <div class="card-footer text-muted">
@@ -73,7 +55,7 @@
                     <div class="card mb-4">
                         <img class="card-img-top" src='../_media/비지찌개.jpg' alt="Card image cap">
                         <div class="card-body">
-                            <p class="card-text">{{p.content | truncatewords:50}}</p>
+                            <p class="card-text">콩마을 :: 비지찌개</p>
                             <a href="post_detail.html" class="btn btn-primary">더 보기 &rarr;</a>
                         </div>
                         <div class="card-footer text-muted">

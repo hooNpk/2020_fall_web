@@ -6,8 +6,9 @@
     <title>VEGE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="../static/base.css" media="screen">
-    <link rel="stylesheet" href="../static/blog-home.css" media="screen">
+    <link rel="stylesheet" href="../static/fit.css" media="screen">
+    <link rel="stylesheet" href="../static/fit_detail.css" media="screen">
+    <link rel="stylesheet" href="../static/form.css" media="screen">
 </head>
 
 <body>
@@ -16,25 +17,6 @@
             <div class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
                 <div class="container">
                     <a href="../" class="navbar-brand">Vege-Search</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes"> 식당 <span
-                                        class="caret"></span></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" > 도서관 <span
-                                        class="caret"></span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../help/">더 알아보기</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </nav>
@@ -47,7 +29,10 @@
                 <table>
                     <tr>
                         <td>
-                            <label for="name">Name (2 to 8 characters):</label>
+                            <label for="name">Name</label>
+                        </td>
+                        <td>
+                            (2 to 8 char):
                         </td>
                         <td>
                             <input type="text" id="name" name="name" required minlength="2" maxlength="8" size="10">
@@ -75,6 +60,9 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            Vegetarian: 
+                        </td>
                         <td>
                             <label><input type="checkbox" name="vege" value="vegan"> Vegan</label>
                         </td>
