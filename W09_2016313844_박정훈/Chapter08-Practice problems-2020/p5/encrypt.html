@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Encrypt!</title>
+	<script></script>
+  </head>
+  <body>
+    <h1>Encrypt!</h1>
+	<h2>Translate any text message into a super-secret cipher!</h2>
+	<fieldset>
+		<legend>Text to Encrypt</legend>
+		<textarea id="plain_text" cols="60" rows="10"></textarea>
+	</fieldset>
+	<fieldset>
+		<legend>Encrypt Options</legend>
+		<strong>Cipher Type</strong>:
+		<select id="type">
+			<option value="shift">Shift Cipher</option>
+			<option value="random">Randomized</option>
+		</select>
+		<select id="val">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+		</select>
+		<button>Encrypt!</button>
+	</fieldset>
+    <div id="output"></div>
+  </body>
+</html>
