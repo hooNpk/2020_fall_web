@@ -1,0 +1,31 @@
+.circle{
+    width : 100px;
+    height : 100px;
+    border-radius : 50%;
+    text-align : center;
+    line-height : 100px;
+}
+
+.center{
+    text-align : center;
+}
+
+.red{
+    background : red;
+}
+
+.green{
+    background: green;
+}
+
+.purlple{
+    background-color : purple;
+}
+
+.pink{
+    background-color : pink;
+}
+
+.flex{
+    
+}
