@@ -1,3 +1,13 @@
+p {
+    margin-top : 3px;
+    margin-bottom : 3px;
+}
+
+h4{
+    margin-top: 0.5em;
+    margin-bottom : 0.5em;
+}
+
 .circle{
     width : 100px;
     height : 100px;
@@ -10,18 +20,16 @@
     text-align : center;
 }
 
-.red{
-    background : red;
-}
-
 .green{
     background: green;
+    font-size : 20px;
+    font-weight: bolder;
 }
 
 .green:hover{
-    background: purple;
+    background: white;
     font-size : 20px;
-    font-weight:larger
+    font-weight: bolder;
 }
 
 .pink{
@@ -35,4 +43,11 @@
 .flex{
     display : flex;
     justify-content: center;
+}
+
+.pad{
+    padding-top : 20px;
+    padding-bottom: 20px;
+    margin-top : 0px;
+    margin-bottom: 0px;;
 }
