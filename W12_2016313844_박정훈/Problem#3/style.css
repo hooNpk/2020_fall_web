@@ -1,0 +1,49 @@
+input#name:focus {
+    background-color : grey;
+}
+
+#selectable .ui-selecting { 
+    background: #FECA40; 
+}
+
+#selectable .ui-selected { 
+    background: #F39814;
+    color: white; 
+}
+
+#selectable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+#selectable li {
+    margin: 2px;
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+    display : inline-block;
+    background-color: rgb(238, 238, 238);
+}
+
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+#sortable li {
+    margin: 0 3px 3px 3px;
+    padding: 5px;
+    padding-left: 25px;
+    font-size: 1em;
+    color : rgb(80, 169, 204);
+    font-weight : bold;
+}
+
+#sortable li span {
+    position: absolute;
+    margin-left: -1.4em;
+}
