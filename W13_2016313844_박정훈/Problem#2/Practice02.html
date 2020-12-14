@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    #drop_box div {
+        position : relative;
+        width: 200px;
+        height: 200px;
+        border : 1px dashed gray;
+        margin: 3px;
+    }
+    
+    #drop_box {
+        background-color : black;
+        width : 410px;
+        height : 205px;
+        padding : 2px;
+        display : inline-block;
+        display : flex;
+    }
+    
+    #images {
+      
+    }
+    
+    img {
+     
+    }
+    
+    #drag1,
+    #drag2,
+    #drag3,
+    #drag4 {
+      
+    }
+    </style>
+    <script>
+        function AllowDrop(e){
+            e.preventDefault();
+        }
+
+        function Drag(e){
+            e.dataTransfer.setData("Text", e.target.id);
+        }
+
+        function Drop(e){
+            e.preventDefault();
+            var src = e.dataTransfer.getData("Text");
+            e.target.appendChild(document.getElementById(src));
+        }
+    </script>
+</head>
+<body>
+    <p>Complete the puzzle.</p>
+    <br>
+    
+    <div id="images">
+        <img id="img1" src="down-left.png" draggable="true" ondragstart="Drag(event)" width="200" height="200">
+        <img id="img2" src="down-right.png" draggable="true" ondragstart="Drag(event)" width="200" height="200">
+        <img id="img3" src="up-left.png" draggable="true" ondragstart="Drag(event)" width="200" height="200">
+        <img id="img4" src="up-right.png" draggable="true" ondragstart="Drag(event)" width="200" height="200">
+    </div>
+	
+	<div id="drop_box" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+        <div></div>
+        <div></div>
+    </div>
+    <div id="drop_box" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

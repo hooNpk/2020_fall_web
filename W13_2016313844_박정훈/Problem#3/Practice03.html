@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=43a773b1463c2d84a9e74bbf64a4fe78">
+        </script>
+    -->
+    </head>
+    <body>
+       
+        
+        <p id="demo">Show stadium position.</p>
+        <button onclick="getLocation()">Try It</button>
+        <div id="map" style="width:100%; height:400px;">
+        </div>
+
+        
+        <script>
+            function getLocation(){
+                let long = 126.897298;
+                let leti = 37.568411;
+                let word = document.getElementById("demo");
+                word.innerHTML = "Latitude: "+leti+"<br>"+"Longitude: "+long;
+                showGeolocation(leti, long);
+            }
+
+            function showGeolocation(leti, long){
+                myDiv = document.getElementById("map");
+                /*
+                let options = {
+                    center: new kakao.maps.LatLng(leti, long),
+                    level : 3
+                };
+                */
+                let latlon = leti+","+long;
+                let img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyBNknPsTa1c4visiL3CkC1FvBCWWU-rV6c";
+                myDiv.innerHTML = "<img src='"+img_url+"'>";
+
+                //var map = new kakao.maps.Map(myDiv, options);
+            }
+        </script>
+
+    </body>
+</html>
