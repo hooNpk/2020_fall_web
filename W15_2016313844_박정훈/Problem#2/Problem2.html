@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jQuery Mobile</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+  <form>
+    <input id="filterTable-input" data-icon="search" data-iconpos="left">
+  </form>
+  <table data-role="table" id="movie-table" class="ui-responsive">
+    <thead>
+      <tr>
+        <th data-priority="1">Rank</th>
+        <th data-priority="persist">Movie Title</th>
+        <th data-priority="2">Year</th>
+        <th data-priority="3"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+        <th data-priority="4">Reviews</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td id="kane">Citizen Kane</td>
+        <td>1941</td>
+        <td>100%</td>
+        <td>74</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td id="blanca">Casablanca</td>
+        <td>1942</td>
+        <td>97%</td>
+        <td>64</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td id="papa">The Godfather</td>
+        <td>1972</td>
+        <td>97%</td>
+        <td>87</td>
+      </tr>
+    </tbody>
+  </table>
+  <Script>
+      $("#filterTable-input").on("keyup", function(){
+          console.log("ABCD");
+          let search = $(this).val().toLowerCase();
+          $("#movie-table tr").filter(function(){
+              $(this).toggle($(this).text().toLowerCase().indexOf(search) > -1)
+          });
+      })
+      $('#kane').click(function(){
+      window.open("https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%AF%BC_%EC%BC%80%EC%9D%B8");
+      return false;
+      })
+      $('#blanca').click(function(){
+      window.open("https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%82%AC%EB%B8%94%EB%9E%91%EC%B9%B4_(%EC%98%81%ED%99%94)");
+      return false;
+      })
+      $('#papa').click(function(){
+      window.open("https://ko.wikipedia.org/wiki/%EB%8C%80%EB%B6%80_(%EC%98%81%ED%99%94)");
+      return false;
+      })
+  </Script>
+</body>
+
+</html>

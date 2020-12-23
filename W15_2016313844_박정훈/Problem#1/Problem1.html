@@ -16,21 +16,30 @@
     </div>
     <div data-role="content">
       <ul data-role="listview">
-        <li>
-
+        <li >
+          <img src="curry.jpg" width="150px" height="150px">
+          <h2>(1) Curry</h2>
+          <input type="text" placeholder="Please describe how the food taste like">
+          <button id="curry" data-icon="check" data-iconpos="left">Click for recipe</button>
         </li>
         <li>
-
+          <img src="hummus.jpg" width="150px" height="150px">
+          <h2>(2) Hummus</h2>
+          <input type="text" placeholder="Please describe how the food taste like">
+          <button id="hummus" data-icon="check" data-iconpos="left">Click for recipe</button>
         </li>
         <li>
-
+          <img src="mafatofu.jpg" width="150px" height="150px">
+          <h2>(3) Mapa Tofu</h2>
+          <input type="text" placeholder="Please describe how the food taste like">
+          <button id="mafatofu" data-icon="check" data-iconpos="left">Click for recipe</button>
         </li>
         <li>
           <label for="txt4"><u>My Information</u></label>
           <ul>
-            <li><b>Name</b> : </li>
-            <li><b>University</b> : </li>
-            <li><b>Goal</b> : </li>
+            <li><b>Name</b> : Jeonghoon Park</li>
+            <li><b>University</b> : SKKU</li>
+            <li><b>Goal</b> : Solve the global warming</li>
           </ul>
         </li>
       </ul>
@@ -40,6 +49,20 @@
       </div>
     </div>
   </div>
+  <script>
+    $('#curry').click(function(){
+      window.open("https://www.menupan.com/Cook/CookBoard/CookBoard_View.asp?ID=49620");
+      return false;
+    })
+    $('#hummus').click(function(){
+      window.open("https://m.blog.naver.com/PostView.nhn?blogId=jenkong07&logNo=221142322108&proxyReferer=https:%2F%2Fwww.google.com%2F");
+      return false;
+    })
+    $('#mafatofu').click(function(){
+      window.open("https://www.10000recipe.com/recipe/6865651");
+      return false;
+    })
+  </script>
 </body>
 
 </html>

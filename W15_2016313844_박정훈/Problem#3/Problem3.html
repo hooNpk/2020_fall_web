@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .tablist-left {
+            width: 25%;
+            display: inline-block;
+        }
+
+        .tablist-content {
+            width: 60%;
+
+            vertical-align: top;
+            margin-left: 5%;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            $("#tabs").tabs();
+        };
+    </script>
+</head>
+
+<body>
+    <h2>Use insert listview for tab</h2>
+    <div data-role="tabs" id="tabs" style="display:flex">
+        <div>
+            <ul>
+                <li><a href="#one">one</a></li>
+                <li><a href="#two">two</a></li>
+                <li><a href="#three">three</a></li>
+            </ul>
+        </div>
+        <div id="one">
+            <ul>
+                <h1>Fist tab contents</h1>
+            </ul>
+        </div>
+        <div id="two">
+            <ul data-role="listview">
+                <li>
+                    <img src="curry.jpg" width="150px" height="150px">
+                    <h2>(1) Curry</h2>
+                    <input type="text" placeholder="Please describe how the food taste like">
+                    <button id="curry" data-icon="check" data-iconpos="left">Click for recipe</button>
+                </li>
+                <li>
+                    <img src="hummus.jpg" width="150px" height="150px">
+                    <h2>(2) Hummus</h2>
+                    <input type="text" placeholder="Please describe how the food taste like">
+                    <button id="hummus" data-icon="check" data-iconpos="left">Click for recipe</button>
+                </li>
+                <li>
+                    <img src="mafatofu.jpg" width="150px" height="150px">
+                    <h2>(3) Mapa Tofu</h2>
+                    <input type="text" placeholder="Please describe how the food taste like">
+                    <button id="mafatofu" data-icon="check" data-iconpos="left">Click for recipe</button>
+                </li>
+            </ul>
+        </div>
+        <div id="three">
+            <ul>
+                <table data-role="table" id="movie-table" class="ui-responsive">
+                    <thead>
+                        <tr>
+                            <th data-priority="1">Rank</th>
+                            <th data-priority="persist">Movie Title</th>
+                            <th data-priority="2">Year</th>
+                            <th data-priority="3"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+                            <th data-priority="4">Reviews</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="kane">Citizen Kane</td>
+                            <td>1941</td>
+                            <td>100%</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="blanca">Casablanca</td>
+                            <td>1942</td>
+                            <td>97%</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="papa">The Godfather</td>
+                            <td>1972</td>
+                            <td>97%</td>
+                            <td>87</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
